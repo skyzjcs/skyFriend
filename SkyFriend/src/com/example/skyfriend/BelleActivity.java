@@ -30,7 +30,7 @@ public class BelleActivity extends Activity{
 	private String[] imageUrlArray=new String[30];
 	private GridView gvBelle;
 	private String json;
-	
+	//handler定义
 	private Handler h1=new Handler(){
 		public void handleMessage(android.os.Message msg) {
 			if(msg.what==1){
