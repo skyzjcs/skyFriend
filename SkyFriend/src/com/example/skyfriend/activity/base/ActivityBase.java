@@ -1,7 +1,7 @@
 package com.example.skyfriend.activity.base;
-import android.app.Activity;
+import android.support.v4.app.FragmentActivity;
 
 
-public class ActivityBase extends Activity{
+public class ActivityBase extends FragmentActivity{
 
 }
