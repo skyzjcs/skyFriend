@@ -16,24 +16,19 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.skyfriend.ui.belle.MainActivity"
-            android:label="@string/app_name" >
+            android:name="com.example.skyfriend.ui.belle.MainActivity">
             
         </activity>
         <activity
-            android:name="com.example.skyfriend.ui.belle.BelleActivity"
-            android:label="@string/app_name" >
+            android:name="com.example.skyfriend.ui.belle.BelleActivity">
         </activity>
         <activity
-            android:name="com.example.skyfriend.ui.belle.RobotActivity"
-            android:label="@string/title_activity_robot" >
+            android:name="com.example.skyfriend.ui.belle.RobotActivity">
         </activity>
         <activity
-            android:name="com.example.skyfriend.ua.ActivityMain"
-            android:label="@string/title_activity_robot" >
+            android:name="com.example.skyfriend.ui.ActivityMain">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
