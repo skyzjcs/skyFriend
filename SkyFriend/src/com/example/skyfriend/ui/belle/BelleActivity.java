@@ -51,18 +51,26 @@ public class BelleActivity extends Activity{
 				
 				@Override
 				public void run() {
+					getTest();
 					getJsonByUtil();
+					
 				}
+
+				
 			}).start();
 		
 //		getJsonByVolley();//通过Volley返回json数据
 		
 	}
 	
-
+	private void getTest() {
+		Log.i("lala", "Coming");
+		Log.i("lala", GetPostUtil.sendGet("http://www.qctpay.com/PGWeb/memberInfoManagement/checkImgCode.action?checkCode=4878"));
+	}
+	
 	private void getJsonByUtil() {
 		json=GetPostUtil.sendGet("http://image.baidu.com/channel/listjson?pn=0&rn=30&tag1=%E7%BE%8E%E5%A5%B3&tag2=%E5%85%A8%E9%83%A8&ie=utf8");
-//Log.i("lala","getJsonByUtil："+json);
+Log.i("lala","getJsonByUtil："+json);
 		try {
 			JSONObject jo=new JSONObject(json);
 			JSONArray ja=jo.getJSONArray("data");
