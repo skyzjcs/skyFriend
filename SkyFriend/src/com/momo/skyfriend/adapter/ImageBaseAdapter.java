@@ -52,21 +52,20 @@ public abstract class ImageBaseAdapter extends BaseAdapter {
 		{
 			convertView=this.inflater.inflate(getItemLayout(), parent,false);
 			viewHolder=new ViewHolder();
-			viewHolder.ivCar=(ImageView)convertView.findViewById(R.id.iv_car);
+			viewHolder.ivBelle=(ImageView)convertView.findViewById(R.id.iv_belle);
 			convertView.setTag(viewHolder);
 		}
 		else {
 			viewHolder=(ViewHolder)convertView.getTag();
 		}
-		setImage(viewHolder.ivCar, imageUrlArray[position]);
+		setImage(viewHolder.ivBelle, imageUrlArray[position]);
 		
 		return convertView;
 	}
 
 	static class ViewHolder {
-		ImageView ivCar;
+		ImageView ivBelle;
 	}
-	
 	
 	abstract int getItemLayout();
 	

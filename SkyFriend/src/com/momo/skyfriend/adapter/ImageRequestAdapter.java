@@ -12,7 +12,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
 import android.widget.ImageView;
-
+/**
+ * 请求图片的图片适配器
+ * @author sky
+ *
+ */
 public class ImageRequestAdapter extends ImageBaseAdapter {
 
 	private Context context;

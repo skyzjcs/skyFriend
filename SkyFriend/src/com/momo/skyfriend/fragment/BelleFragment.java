@@ -21,7 +21,7 @@ public class BelleFragment extends FragmentBase{
 	private String[] imageUrlArray=new String[30];//下载图片数量
 	private GridView gvBelle;
 	private String json;
-	
+	//还是用的Volley框架发起的请求哟
 	private Handler h1=new Handler(){
 		public void handleMessage(android.os.Message msg) {
 			if(msg.what==1){
