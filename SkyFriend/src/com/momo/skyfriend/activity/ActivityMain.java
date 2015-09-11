@@ -13,6 +13,7 @@ import android.view.View;
 
 import com.example.skyfriend.R;
 import com.momo.skyfriend.fragment.BelleFragment;
+import com.momo.skyfriend.fragment.FaceFragment;
 import com.momo.skyfriend.fragment.RobotFragment;
 import com.momo.skyfriend.view.TabContainer;
 import com.momo.skyfriend.view.TabContainer.OnCheckedListener;
@@ -54,6 +55,7 @@ public class ActivityMain extends ActivityBase implements OnPageChangeListener{
 		mTabContainer=(TabContainer) findViewById(R.id.tabContainer);
 		mFragments.add(new BelleFragment());
 		mFragments.add(new RobotFragment());
+		mFragments.add(new FaceFragment());
 		mViewPager.setAdapter(new MPagerAdapter());
 		mViewPager.setCurrentItem(0,false);
 		mViewPager.setOnPageChangeListener(this);

@@ -24,7 +24,7 @@ public class ImageRequestAdapter extends ImageBaseAdapter {
 
 	@Override
 	int getItemLayout() {
-		return R.layout.fr_image_request_list_item;
+		return R.layout.belle_image;
 	}
 
 	@Override

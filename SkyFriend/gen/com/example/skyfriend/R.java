@@ -93,30 +93,20 @@ public final class R {
         public static final int tab_bg=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f090011;
-        public static final int contacts_layout=0x7f090008;
-        public static final int contacts_text=0x7f09000a;
-        public static final int content=0x7f090004;
+        public static final int action_settings=0x7f090007;
         public static final int gv_belle=0x7f090003;
-        public static final int icon=0x7f09000e;
-        public static final int iv_belle=0x7f090006;
+        public static final int icon=0x7f090004;
         public static final int iv_car=0x7f090002;
-        public static final int iv_robot=0x7f090009;
-        public static final int message_layout=0x7f090005;
-        public static final int message_text=0x7f090007;
-        public static final int msg=0x7f090010;
-        public static final int news_image=0x7f09000c;
-        public static final int news_layout=0x7f09000b;
-        public static final int news_text=0x7f09000d;
+        public static final int msg=0x7f090006;
         public static final int tabContainer=0x7f090001;
-        public static final int text=0x7f09000f;
+        public static final int text=0x7f090005;
         public static final int viewPager=0x7f090000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int fr_image_request_list_item=0x7f030001;
+        public static final int belle_image=0x7f030001;
         public static final int sf_belle=0x7f030002;
-        public static final int sf_main=0x7f030003;
+        public static final int sf_face=0x7f030003;
         public static final int sf_robot=0x7f030004;
         public static final int tab_item_view=0x7f030005;
     }
