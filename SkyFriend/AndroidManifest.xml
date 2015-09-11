@@ -20,7 +20,7 @@
             
         </activity>
         <activity
-            android:name="com.momo.skyfriend.fragment.BelleActivity">
+            android:name="com.momo.skyfriend.activity.BelleActivity">
         </activity>
         <activity
             android:name="com.momo.skyfriend.fragment.RobotActivity">

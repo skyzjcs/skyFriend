@@ -1,4 +1,4 @@
-package com.momo.skyfriend.fragment;
+package com.momo.skyfriend.activity;
 
 
 import java.util.HashMap;

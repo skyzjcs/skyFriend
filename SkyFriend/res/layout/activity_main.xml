@@ -9,11 +9,10 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         />
-	<!-- <com.huateng.fm.ui.view.tab.HTTabContainer
+	<com.momo.skyfriend.view.TabContainer
          android:id="@+id/tabContainer"
-             android:layout_width="match_parent"
+         android:layout_width="match_parent"
          android:layout_height="wrap_content"
-         android:background="@color/gray_bg"
-         
-         /> -->
+         android:background="@color/gray_bg"/>
+	
 </LinearLayout>

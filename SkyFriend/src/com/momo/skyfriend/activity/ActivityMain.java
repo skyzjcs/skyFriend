@@ -3,24 +3,49 @@ package com.momo.skyfriend.activity;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
+import android.view.View;
 
 import com.example.skyfriend.R;
 import com.momo.skyfriend.fragment.BelleFragment;
+import com.momo.skyfriend.view.TabContainer;
+import com.momo.skyfriend.view.TabContainer.OnCheckedListener;
 
 public class ActivityMain extends ActivityBase implements OnPageChangeListener{
 	private List<Fragment> mFragments=new ArrayList<Fragment>();
 	private ViewPager mViewPager;
+	private TabContainer mTabContainer;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initFragments();
+		initTabs();
+	}
+
+	/**
+	 * 初始化选项卡 
+	 */
+	@SuppressLint("ResourceAsColor")
+	private void initTabs() {
+		mTabContainer.setSelectedTextColor(R.color.sea_blue, R.color.gray_textcolor);
+		mTabContainer.addItem(R.drawable.home_unsel, R.drawable.home_sel, "美女库")
+			.addItem(R.drawable.community_unsel, R.drawable.community_sel, "机器人")
+			.addItem(R.drawable.me_unsel, R.drawable.me_sel, "脸谱");
+		mTabContainer.setBackgroundResource(R.color.tab_gray_bg);
+		mTabContainer.setSelection(0);
+		mTabContainer.setOnCheckedListener(new OnCheckedListener() {
+			@Override
+			public void onChecked(int position, View v) {
+				mViewPager.setCurrentItem(position,false);
+			}
+		});
 	}
 
 	private void initFragments() {
@@ -29,6 +54,7 @@ public class ActivityMain extends ActivityBase implements OnPageChangeListener{
 		mViewPager.setAdapter(new MPagerAdapter());
 		mViewPager.setCurrentItem(0,false);
 		mViewPager.setOnPageChangeListener(this);
+		mTabContainer=(TabContainer) findViewById(R.id.tabContainer);
 	}
 
 	/**
