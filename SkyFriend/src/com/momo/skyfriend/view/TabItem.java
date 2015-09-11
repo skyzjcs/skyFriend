@@ -38,7 +38,7 @@ public class TabItem extends LinearLayout {
 	 */
 	private void init() {
 		setOrientation(VERTICAL);
-		LayoutParams params=new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
+		LayoutParams params=new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT,1);//这里不设置权重可不行啊！！！
 		setLayoutParams(params);
 		ViewGroup vg=(ViewGroup) LayoutInflater.from(getContext()).inflate(R.layout.tab_item_view, null);
 		iv_icon=(ImageView) vg.findViewById(R.id.icon);
