@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="qing">#008fd2</color>
+    <color name="gray_bg">#e5e5e5</color>
+    <color name="white">#ffffff</color>
+    <color name="line_form">#1f7e92</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="lightblue">#ff0191cd</color>
+    <color name="gray_textcolor">#858585</color>
+    <color name="gray_line_background">#e8e8e8</color>
+    <color name="shen_gray">#E3E3E3</color>
+    <color name="white_gray">#F8F8F8</color>
+    <color name="secret_gray">#eae9e8</color>
+    <color name="gray_listitem">#ececec</color>
+    <color name="transparent">#00000000</color>
+    <color name="transelent">#60000000</color>
+    <color name="transelent_dark">#20000000</color>
+    <color name="transelent_lighter">#10000000</color>
+    <color name="gray_line">#cbcbcb</color>
+    <color name="light_red">#FF7070</color>
+    <color name="zong_select">#43A1A5</color>
+    <color name="black_qian">#353535</color>
+    <color name="zong">#1DB747</color>
+    <color name="white_transcent">#50ffffff</color>
+    <color name="dark_white_transcent">#90ffffff</color>
+    <color name="tab_gray_bg">#F7F7F7</color>
+    <color name="sea_blue">#4BCCE1</color>
+    <color name="sea_blue_primary">#4BCCE1</color>
+    <color name="sea_blue_stated">#EC4BCCE1</color>
+    <color name="black_blue">#242736</color>
+    <color name="qr_head">#272A3B</color>
+    <color name="finace_head_text_left">#FCA845</color>
+    <color name="finace_head_text_middle">#4199D8</color>
+    <color name="finace_head_text_right">#1ADDEF</color>
+    <color name="good_cart_bar_background">#F7F7F7</color>
+    <color name="restraurant_detail_item_pressed">#EDEDED</color>
+    <color name="restraurant_detail_item_normal">#FFFFFF</color>
+
+    <!-- huangkangke -->
+    <color name="grey1">#F5F5F5</color>
+    <color name="grey2">#787878</color>
+    <color name="grey_white">#CECECE</color>
+    <color name="green">#06d606</color>
+    <color name="yellow">#f6d744</color>
+    <color name="white_60">#60FFFFFF</color>
+    <color name="pay_qrcode_tv">#CECCCC</color>
+    <color name="pay_qrcode_view">#858899</color>
+    <color name="pay_qrcode_tv_code">#409DE5</color>
+    <color name="white_5">#F5F5F5</color>
+    <color name="black_43">#434343</color>
+    <color name="grey_69">#696969</color>
+    <color name="red_61">#E61A5F</color>
+
+</resources>
