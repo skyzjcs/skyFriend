@@ -11,7 +11,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+/**
+ * 自定义选项卡内部元素
+ * @author yangze
+ *
+ */
 public class TabItem extends LinearLayout {
 	private ImageView iv_icon;//图标
 	private TextView tv_text;//图标文字

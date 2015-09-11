@@ -38,7 +38,6 @@ public class BelleFragment extends FragmentBase{
 		this.v=v;
 		new Thread(
 				new Runnable() {
-					
 					@Override
 					public void run() {
 						getJsonByUtil();
