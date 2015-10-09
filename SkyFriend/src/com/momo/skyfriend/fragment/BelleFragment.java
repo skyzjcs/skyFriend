@@ -77,6 +77,7 @@ Log.i("lala","getJsonByUtil："+json);
 //				BelleMap.put("name", series.getString("name"));
 //				Log.i("lala","打印路径："+imageUrlArray[i]);
 				h1.sendEmptyMessage(1);
+				
 			}
 			
 		
