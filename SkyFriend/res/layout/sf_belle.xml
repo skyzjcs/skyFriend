@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-	android:id="@+id/gv_belle"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:gravity="center"
-	android:horizontalSpacing="4dp"
-	android:numColumns="3"
-	android:stretchMode="columnWidth"
-	android:verticalSpacing="4dp"
-	android:padding="4dp" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner 
+            android:id="@+id/spin_tag1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Spinner 
+            android:id="@+id/spin_ftags"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <Button 
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="启动传送门"/>
+    </LinearLayout>
+	<GridView 
+		android:id="@+id/gv_belle"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:horizontalSpacing="4dp"
+		android:numColumns="3"
+		android:stretchMode="columnWidth"
+		android:verticalSpacing="4dp"
+		android:padding="4dp" />
+</LinearLayout>

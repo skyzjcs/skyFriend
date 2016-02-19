@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="44dip"   
         android:id="@+id/chat_title"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:background="#18B4ED">
         <Button 
             android:id="@+id/chat_msg_button"
             android:layout_width="match_parent"
@@ -48,23 +49,30 @@
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:paddingTop="3dp"
-        android:paddingBottom="3dip">
+        android:paddingBottom="3dip"
+        android:background="#EBECEE">
         <EditText 
             android:id="@+id/robot_bottom_edittext"
             android:layout_width="0dp"
             android:layout_height="32dip"
             android:layout_weight="4"
+            android:layout_gravity="center_vertical"
             android:layout_marginLeft="5dip"
-            android:layout_marginRight="7dip"/>
+            android:layout_marginRight="7dip"
+            android:paddingLeft="5dp"
+            android:background="@drawable/border_radius_white"/>
         <Button
             android:id="@+id/robot_bottom_sendbutton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_gravity="center_vertical"
             android:layout_marginRight="4dip"
             android:text="发送"
             android:textSize="12sp"
-            android:textColor="@android:color/white"/>"
+            android:textColor="@android:color/white"
+            android:background="@drawable/border_radius_blue"
+            />
     </LinearLayout>
     
     <ListView 

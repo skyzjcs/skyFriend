@@ -116,7 +116,7 @@ public class RobotFragment extends FragmentBase {
 			@Override
 			public void run() {
 				try {
-					String APIKEY = "a5b6f341d7981afc732dec4b3cb00379";
+					String APIKEY = "a8d10500e5d25b0df9c7cabb4046d8f8";
 					String INFO;
 					INFO = URLEncoder.encode(content, "utf-8");
 					String getURL = "http://www.tuling123.com/openapi/api?key="

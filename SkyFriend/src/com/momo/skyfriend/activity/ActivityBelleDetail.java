@@ -17,6 +17,11 @@ import android.view.View;
 import android.view.View.OnTouchListener;
 import android.widget.ImageView;
 
+/**
+ * 美女图片详情页
+ * @author yangze
+ *
+ */
 public class ActivityBelleDetail extends ActivityBase implements OnTouchListener{
 	ImageView iv_belle;
 	int sx=0;

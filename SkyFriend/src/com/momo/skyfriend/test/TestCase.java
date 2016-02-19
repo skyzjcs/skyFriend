@@ -1,20 +1,26 @@
 package com.momo.skyfriend.test;
 
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URLEncoder;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.apache.http.client.utils.URLEncodedUtils;
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
 import org.junit.Test;
 
-import com.momo.skyfriend.util.GetPostUtil;
-
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.test.AndroidTestCase;
 import android.util.Log;
 
+import com.example.skyfriend.R;
+import com.momo.skyfriend.util.GetPostUtil;
+import com.momo.skyfriend.util.HttpClients;
+import com.momo.skyfriend.util.HttpResponseMessage;
+
 public class TestCase extends AndroidTestCase{
 	
-	@Test
+	/*@Test
 	public void testJson() throws Exception{
 		String tag1="明星";
 		String tag2="全部";
@@ -23,5 +29,20 @@ public class TestCase extends AndroidTestCase{
 		
 		String json=GetPostUtil.sendGet(url);
 		Log.i("lala","getJsonByUtil："+json);
+	}*/
+	
+	@Test
+	public void testFace(){
+		Bitmap bitmap=BitmapFactory.decodeResource(getContext().getResources(), R.drawable.fanbinbin);
+		String url="http://apicn.faceplusplus.com/v2/detection/detect";
+		HttpClients httpClients = new HttpClients(getContext());
+		List<NameValuePair> params = new ArrayList<NameValuePair>();
+		params.add(new BasicNameValuePair("api_key", "cb60f456f34cc8d4aa97c21db6a319aa"));
+		params.add(new BasicNameValuePair("api_secret", "as2hMy12MhMX4k-3CxGaNqkIJYY6rAtT"));
+		params.add(new BasicNameValuePair("url", "http://faceplusplus.com/static/img/demo/1.jpg"));
+//		params.add("img", bitmap);
+		params.add(new BasicNameValuePair("attribute", "age"));
+		HttpResponseMessage httpResponseMessage = httpClients.doPost(url, params);
+		Log.i("lala","getFace："+httpResponseMessage.getData());
 	}
 }
